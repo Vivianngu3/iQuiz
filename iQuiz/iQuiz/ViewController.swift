@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         let nib = UINib.init(nibName: "CustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customCell")
+        tableView.tableFooterView = UIView()
     }
 
     @IBAction func settingsAlert(_ sender: Any) {
