@@ -15,6 +15,8 @@
 		75B7F3B32643ABC200706EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B7F3B12643ABC200706EA7 /* LaunchScreen.storyboard */; };
 		75B7F3BE2643ABC300706EA7 /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7F3BD2643ABC300706EA7 /* iQuizTests.swift */; };
 		75B7F3C92643ABC300706EA7 /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7F3C82643ABC300706EA7 /* iQuizUITests.swift */; };
+		75B7F3DB2643B64100706EA7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7F3D92643B64100706EA7 /* CustomTableViewCell.swift */; };
+		75B7F3DC2643B64100706EA7 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B7F3DA2643B64100706EA7 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		75B7F3C42643ABC300706EA7 /* iQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B7F3C82643ABC300706EA7 /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		75B7F3CA2643ABC300706EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B7F3D92643B64100706EA7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		75B7F3DA2643B64100706EA7 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				75B7F3AF2643ABC200706EA7 /* Assets.xcassets */,
 				75B7F3B12643ABC200706EA7 /* LaunchScreen.storyboard */,
 				75B7F3B42643ABC200706EA7 /* Info.plist */,
+				75B7F3D92643B64100706EA7 /* CustomTableViewCell.swift */,
+				75B7F3DA2643B64100706EA7 /* CustomTableViewCell.xib */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			files = (
 				75B7F3B32643ABC200706EA7 /* LaunchScreen.storyboard in Resources */,
 				75B7F3B02643ABC200706EA7 /* Assets.xcassets in Resources */,
+				75B7F3DC2643B64100706EA7 /* CustomTableViewCell.xib in Resources */,
 				75B7F3AE2643ABB600706EA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			files = (
 				75B7F3AB2643ABB600706EA7 /* ViewController.swift in Sources */,
 				75B7F3A72643ABB600706EA7 /* AppDelegate.swift in Sources */,
+				75B7F3DB2643B64100706EA7 /* CustomTableViewCell.swift in Sources */,
 				75B7F3A92643ABB600706EA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
