@@ -18,13 +18,12 @@ class Quizzes: NSObject {
         self.descrip = desc
         self.imgs = image
         self.questions = question
-        
     }
 }
 
 class Questions: NSObject {
     var question: String
-    var correctAnswer: Int = 0
+    var correctAnswer = 0
     var options: [String] = []
     
     init(q: String, ans: [String], correctAns:Int) {
@@ -48,8 +47,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          Quizzes(subj: "Science", desc: "Can you Bill Nye the science guy?", image: "science",
                  question: [Questions(q: "What is water?", ans: ["Air", "Parcipitation", "Liquid", "H20"], correctAns: 3)])
      ]
-    
-    var subject: [Questions] = []
     
     @IBOutlet weak var tableSubjects : UITableView!
     
@@ -91,9 +88,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 class QuestionView: UIViewController {
     var quizzes: Quizzes?
-    var questionNum: Int = 0
-    var answer: Int = 0
-    var numRight: Int = 0
+    var questionNum = 0
+    var answer = 0
+    var numRight = 0
     
     @IBOutlet weak var questionTest: UILabel!
     @IBOutlet weak var optionA: UIButton!
@@ -163,9 +160,9 @@ class QuestionView: UIViewController {
 
 class AnswerView: UIViewController {
     var quizzes: Quizzes?
-    var questionNum:Int = 0
-    var answer:Int = 0
-    var numRight:Int = 0
+    var questionNum = 0
+    var answer = 0
+    var numRight = 0
     
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var correctAnswerText: UILabel!
@@ -210,7 +207,7 @@ class AnswerView: UIViewController {
     
 class FinishedView: UIViewController {
     var quizzes: Quizzes?
-    var numRight: Int = 0
+    var numRight = 0
     
     @IBOutlet weak var descriptionScore: UILabel!
     @IBOutlet weak var finalScore: UILabel!
@@ -231,7 +228,6 @@ class FinishedView: UIViewController {
         }
         
         finalScore.text = String(numRight) + " / " + String((quizzes?.questions.count)!) + " correct"
-        
     }
     
 }
