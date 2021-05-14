@@ -51,7 +51,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="CFx-Tc-l57" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OAz-48-9km" secondAttribute="trailingMargin" constant="-309" id="EmL-rM-Pq7"/>
                                                 <constraint firstItem="DO2-oD-6h2" firstAttribute="leading" secondItem="OAz-48-9km" secondAttribute="leadingMargin" id="M6z-Zc-Uf1"/>
+                                                <constraint firstItem="DO2-oD-6h2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OAz-48-9km" secondAttribute="trailingMargin" constant="-322" id="fMI-io-Xk7"/>
                                                 <constraint firstItem="CFx-Tc-l57" firstAttribute="top" secondItem="DO2-oD-6h2" secondAttribute="bottom" constant="8" id="hYw-ph-gaA"/>
                                                 <constraint firstItem="CFx-Tc-l57" firstAttribute="leading" secondItem="OAz-48-9km" secondAttribute="leadingMargin" id="lEv-1n-Muh"/>
                                                 <constraint firstItem="DO2-oD-6h2" firstAttribute="top" secondItem="OAz-48-9km" secondAttribute="topMargin" id="sa6-jO-Cev"/>
@@ -79,7 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iDJ-1W-FUs"/>
                     <connections>
-                        <outlet property="tableView" destination="Ho4-E5-mzp" id="fpd-eT-83G"/>
+                        <outlet property="tableSubjects" destination="Ho4-E5-mzp" id="vZC-9k-p50"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +149,6 @@
                                         <rect key="frame" x="0.0" y="190.5" width="382" height="30"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
-                                            <action selector="submit:" destination="bjU-Zv-sOo" eventType="touchUpInside" id="arX-Ez-ee4"/>
                                             <action selector="submitAnswer:" destination="bjU-Zv-sOo" eventType="touchUpInside" id="yVd-ll-Asq"/>
                                         </connections>
                                     </button>
@@ -264,7 +265,6 @@
                     <connections>
                         <outlet property="correctAnswerText" destination="FLF-j1-iVR" id="5Yg-yF-cjb"/>
                         <outlet property="indicator" destination="83F-w6-qjf" id="HCf-nq-SzF"/>
-                        <outlet property="nextQ" destination="CNB-lO-CiZ" id="Nfc-jm-OhV"/>
                         <outlet property="questionText" destination="wSR-3D-3Of" id="mKN-MJ-Kku"/>
                     </connections>
                 </viewController>
@@ -325,8 +325,8 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="correctAnswerText" destination="5sb-cG-hJU" id="Aie-Ns-joa"/>
-                        <outlet property="indicator" destination="CQK-7q-aLc" id="QVc-sC-BZt"/>
+                        <outlet property="descriptionScore" destination="5sb-cG-hJU" id="MxE-8Y-Klc"/>
+                        <outlet property="finalScore" destination="CQK-7q-aLc" id="SGY-cj-YWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jq8-Hm-EGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -340,7 +340,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qgc-Ix-bGI"/>
+        <segue reference="uHF-Op-VdU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
